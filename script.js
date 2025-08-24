@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             'welcome.txt': `Bienvenido a los servidores de ProtoCorp.
 Tu acceso es limitado. Demuestra tu valía.`,
             '.notes': `-- Notas del Desarrollador --
-Dejé el comando 'execute' habilitado en el servicio RPC para pruebas.
-No olvidar eliminarlo antes del despliegue.
+Chum, dejé el comando 'execute' habilitado en el servicio RPC para pruebas.
+No olvideseliminarlo antes del despliegue.
 Payload de prueba: 'kernel_panic_v2'.
 - Bob`
         },
         '/root': {
-            'flag.txt': 'Felicidades, has obtenido acceso root.\nCTF{3xpl01t_Rpc_S3rv1c3_Pr0t0c0rp}'
+            'flag.txt': 'root.\nCTF{3xpl01t_Rpc_S3rv1c3_Pr0t0c0rp}'
         }
     };
 
