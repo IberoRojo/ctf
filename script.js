@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 Tu acceso es limitado. Demuestra tu valía.`,
             '.notes': `-- Notas del Desarrollador --
 Chum, dejé el comando 'execute' habilitado en el servicio RPC para pruebas.
-No olvideseliminarlo antes del despliegue.
+No olvides eliminarlo antes del despliegue.
 Payload de prueba: 'kernel_panic_v2'.
 - Bob`
         },
@@ -32,12 +32,12 @@ Payload de prueba: 'kernel_panic_v2'.
     const commands = {
         shell: {
             help: () => `Comandos disponibles:
-  help      Muestra esta ayuda.
-  ls [-a]   Lista los archivos del directorio.
-  cat <file>Muestra el contenido de un archivo.
+  help    Muestra esta ayuda.
+  ls [-a]    Lista los archivos del directorio.
+  cat <file>    Muestra el contenido de un archivo.
   scan      Escanea puertos locales en busca de servicios.
-  connect <host:port> Conecta a un servicio.
-  clear     Limpia la pantalla.`,
+  connect <host:port>    Conecta a un servicio.
+  clear    Limpia la pantalla.`,
             ls: (args) => {
                 const showHidden = args.includes('-a');
                 let files = Object.keys(fileSystem[state.cwd]);
@@ -112,9 +112,9 @@ Payload de prueba: 'kernel_panic_v2'.
         hint: (args) => {
             const hintNum = args[0];
             switch(hintNum) {
-                case '1': return "[PISTA 1]: ¿Has mirado bien a tu alrededor? A veces los archivos más interesantes no se ven a simple vista. Prueba a listar *todos* los archivos en tu directorio.";
-                case '2': return "[PISTA 2]: Una nota de un desarrollador puede ser oro puro. El servicio parece tener más funcionalidades de las que anuncia en su ayuda.";
-                case '3': return "[PISTA 3]: El comando 'execute' necesita un argumento específico para funcionar, el 'payload'. La nota que encontraste te da el nombre exacto.";
+                case '1': return "[PISTA 1]: Si no puedes con esto...";
+                case '2': return "[PISTA 2]: ¿De verdad vas a seguir intentandolo?";
+                case '3': return "[PISTA 3]: Que listes los archivos coño.";
                 default: return "Uso: hint <numero_pista> (ej: hint 1)";
             }
         },
